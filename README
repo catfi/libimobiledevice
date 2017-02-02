@@ -30,9 +30,14 @@ Installation
 ============
 
 To compile run:
-	./autogen.sh
+	./autogen.sh --disable-openssl
 	make
 	sudo make install
+
+iOS 10 Compatibility
+====================
+
+As suggested and discussed in the issues of official repository, we need to use GnuTLS instead of OpenSSL along with some other modification contributed from the community (but yet to be merged back to the main repository) to get it working on latest iOS release.
 
 Who/What/Where?
 ===============
